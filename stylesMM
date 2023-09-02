@@ -1,0 +1,482 @@
+/* Remove woo info*/
+.site-info {
+	display: none;
+}
+
+/* HEADER */
+/**positions logo**/
+#mmheadercontainer{
+	display: flex;
+	max-width: 80vw;
+	justify-content: space-between;
+	/*position: relative;
+	left: 10vw;
+	top: 3vh;
+	width: 12vh;
+	height: 6.5em;*/
+}
+
+header{
+	margin-top: 5vh;
+	margin-left: 10vw;
+	margin-bottom: 12vh;
+}
+
+.navshop{
+	justify-content: center;
+	vertical-align: middle;
+	height: 100%; 
+	justify-items: center; 
+	position: relative; 
+	top: 1.2em; 
+	max-height: 2.7em;
+}
+
+
+.navbasket{
+	position: relative; 
+	top: 1em; 
+	max-height: 2.7em;
+}
+
+.logo_header{
+	height: 8vh;
+}
+
+/** hides title**/
+.entry-header{
+	display: none;
+}
+/**hides white line title**/
+.entry-content{
+	margin-top: -2.7vh;
+}
+
+/*STORE*/
+.woocommerce-products-header{
+	display: none;
+}
+
+.woocommerce-breadcrumb{
+	display: none;
+}
+
+.storefront-sorting{
+	display: none;
+}
+
+
+.woo-shop .products{
+	max-width: 66vw;
+	position: relative;
+	left: 16vw;
+}
+
+
+
+
+/*MAILCHIMP*/
+.mccustom{
+
+}
+
+/*ABOUT*/
+
+.page-id-700 .wp-container-3 .about1{
+outline: solid; 
+}
+
+.page-id-700 .wp-container-3 .about2{
+	position: relative;
+	top: 50%;
+	outline: solid;
+}
+
+.aboutcollumn{ 
+}
+
+
+.page-id-373 footer{
+	display: none;
+}
+
+/* Legal */
+ .page-id-725 #main{
+	margin-left: 10vw;
+/* temporary fix for footer on legal */
+	 margin-bottom: 41vh;
+}	
+	
+/* terms and conditions */
+.page-id-1227 #main{
+	margin: auto;
+  width: 50%;
+}
+/* cookies*/
+.page-id-1228 #main{
+	margin: auto;
+  width: 50%;
+}
+    
+/* contact */
+.page-id-727 #main{
+	margin: auto;
+  width: 66%;
+}
+
+/* news */
+.page-id-674 #main{
+	margin: auto;
+  width: 66%;
+}
+
+
+
+/* FOOTER */
+.mmfooter{
+	display: flex; 
+	justify-content: space-between; 
+	height: 200px; 
+}
+
+
+/* VS HOMEPAGE */
+
+.menubox a{
+	text-size-adjust: 1.9;
+}
+
+.big{
+  border-radius: 20px;
+	padding-top: 120px;
+}
+
+.big:hover{
+    scale: 105%;
+    transition: 400ms linear;
+}
+
+
+/* doesnt work with pulsebegone script
+.big:hover{
+   animation-play-state: paused;
+}
+*/
+    
+
+.medium{
+  border-radius: 20px;
+	padding-top: 50px;
+}
+
+.medium:hover{
+    scale: 105%;
+    transition: 400ms linear;
+}
+
+  
+.small{ 
+  width: 17vw; 
+  height: 12vh; 
+  top: 78%;
+  border-radius: 40px;
+	padding-top: 35px;
+	
+}
+
+.aboutcontainer{
+	padding-top: 45px;
+}
+
+
+.small:hover{
+    transform: scale(120%);
+    transition: transform 200ms linear;
+}
+
+.menubox{
+    text-align: center;
+    position: absolute;
+	 }
+
+    .menubox{
+    font-size: 1.2rem;
+    }
+
+
+.shopcontainer{
+    height: 30vh;
+    width: 80vw;
+    top: 23.3%;
+    left: 10%;
+     background-color: #EB8E86;
+}
+
+
+.circleanimation
+{
+    animation: circleAround 20s linear infinite;
+}
+
+@keyframes circleAround {
+    0% 
+    { transform:/* scale(100%) */rotate(0deg) translateX(0vw) translateY(1vh) rotate(0deg); 
+    }
+    
+    33%
+    { transform:/* scale(99%)*/ rotate(182deg) translateX(0vw) translateY(1vh) rotate(-180deg); 
+   
+    }
+
+    66%
+    { 
+        transform:/* scale(101%) */rotate(268deg) translateX(0vw) translateY(1vh) rotate(-272deg); 
+    }
+
+
+    100%{
+        transform: /*scale(100%)*/ rotate(360deg) translateX(0vw) translateY(1vh) rotate(-360deg);
+    }
+}
+
+.newscontainer{
+    width: 80vw;
+    height: 16vh;
+		left: 10%;
+    top: 58%;
+    object-fit: contain;
+    background-color: #E8E5A0;
+}
+
+
+.abouttransition{
+    animation: abouttransition 1.3s 1 linear;
+}
+
+
+@keyframes abouttransition {
+    0% { transform: translateY(-9000%);
+    }
+    77% {transform: translateY(0%);
+  }
+
+  80% {
+      transform: translateY(-130%) rotate(10deg);
+  }
+
+  84%
+  {
+    transform: translateY(-0%) rotate(0deg);
+}
+
+88% {
+    transform: translateY(-80%) rotate(-8deg);
+}
+
+91%
+  {
+    transform: translateY(-0%) rotate(0deg);
+}
+
+94%
+{
+    transform: translateY(-20%) rotate(4deg);
+}
+
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+}  
+  }
+
+.instacontainer{
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 10%;
+    background-size: contain;
+    background-color: #AB86EB;
+}
+
+
+.fbcontainer{
+    left: 33%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #76B8E6;
+}
+
+.contactcontainer{
+    left: 55%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #5CE69B;
+}
+
+.legalcontainer{
+    left: 78%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: grey;
+}
+
+
+
+/*
+@media only screen and (min-width: 700px) {
+    .homemenuwrapper {
+        width: 66vw;
+        aspect-ratio: 16/9;
+    }
+	
+
+
+    .homeheaderwrapper{
+        width: 66vw;
+    }
+
+    .framewrapper{
+        width: 66vw;
+    }
+
+	
+	.shopcontainer{
+	}
+	
+	.newscontainer{
+		left: 16%;
+	}
+	
+		.instacontainer{
+		left: 16.5%;
+	}
+	
+    .fbcontainer{
+       left: 33%;
+    }
+
+    .contactcontainer{
+        left: 49.5%;
+    }
+  
+
+	.legalcontainer{
+		left: 66%;
+	}
+
+}
+*/
+
+
+
+  .sload{
+    animation: 
+    sborder 18s linear infinite, 
+    bouncing_ 1.3s 1 cubic-bezier(1,.81,.97,1.02);
+    animation-delay: 1.9s, 0s;
+}
+		
+		@keyframes bouncing_ {
+    0% { transform: translateY(-9000%);
+    }
+    77% {transform: translateY(0%);
+  }
+
+  80% {
+      transform: translateY(-130%) rotate(10deg);
+  }
+
+  84%
+  {
+    transform: translateY(-0%) rotate(0deg);
+}
+
+88% {
+    transform: translateY(-80%) rotate(-8deg);
+}
+
+91%
+  {
+    transform: translateY(-0%) rotate(0deg);
+}
+
+94%
+{
+    transform: translateY(-20%) rotate(4deg);
+}
+
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+}  
+  }
+
+
+
+@keyframes sborder {
+    0% { border-radius: 40px;
+    }
+
+    17% {border-radius: 40px;
+  }
+
+
+  20% {border-radius: 20px;
+  }
+
+  37%{
+    border-radius: 20px; 
+  }
+
+  40%{
+    border-radius: 40px 40px 40px 30px; 
+  }
+
+  57%{
+    border-radius: 40px 40px 40px 30px;
+  }
+
+  60%{
+    border-radius: 40px 40px 20px 30px;
+  }
+
+  76% {
+    border-radius: 40px 40px 20px 30px;
+  }
+
+  80% {
+    border-radius: 40px 10px 20px 30px;
+  }
+}
+
+
+.test{
+    animation: test 2s 1;
+    transition: scale 200ms linear;
+}
+
+
+@keyframes test {
+0% 
+{ 
+    transform: scale(100%); 
+}
+
+
+66%{
+    transform: scale(160%); 
+}
+
+100%
+{ 
+    transform: scale(0%);
+}
+}
+
+
+.hide{
+    display: none;
+}
+

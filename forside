@@ -1,0 +1,77 @@
+<!-- wp:html -->
+<div class="homemenuwrapper">
+    
+    <a href="https://www.bananmaelk.dk/kea/dbcm/04/news/" class="newscontainer medium menubox">News</a>
+   
+    <a href="https://www.instagram.com" class="instacontainer small menubox">Insta</a>
+   
+      <a href="https://www.facebook.com" class="fbcontainer small menubox">FB</a>
+   
+          <a href="https://www.bananmaelk.dk/kea/dbcm/04/contact/" class="contactcontainer small menubox">Contact</a>
+   
+           <a href="https://www.bananmaelk.dk/kea/dbcm/04/legal/" class="legalcontainer small menubox">Legal</a>
+   
+          <a href="#" class="shopcontainer big menubox">Shop</a>
+   </div>
+   
+   <script>
+       
+       // make all the small blobs 1 constant 
+      const smallmenus = document.getElementsByClassName("small");
+   
+       // when it loads, add the falling animation to the small blobs and the circling to the medium
+       window.addEventListener("load", PageLoad);
+        function PageLoad() {
+          console.log("PageLoad");
+          for (let i = 0; i < smallmenus.length; i++) {
+            smallmenus[i].classList.add("sload");
+          }
+          document.querySelector(".medium").classList.add("circleanimation");
+        }
+      
+        // define constant, all the blobs on the frontpage = allmenus
+        const allmenus = document.getElementsByClassName("menubox");
+        // add selector to the shop button
+        document.querySelector(".big").addEventListener("click", menushop);
+      
+        // target all collection of constant allmenu
+        function menushop() {
+          console.log("menushop");
+          for (let i = 0; i < allmenus.length; i++) {
+            allmenus[i].classList.add("test");
+          }
+          // remove clicking on the shop button
+          document.querySelector(".big").removeEventListener("click", menushop);
+          document.querySelector(".big").addEventListener("animationstart", showproduct);
+        }
+      
+           // when the scaling animation ends, start next function
+        function showproduct() {
+          console.log("showproduct");
+          document.querySelector(".big").addEventListener("animationend", hideboxes);
+        }
+      
+         // adds the .hide css class which is just display none, then go to shop
+        function hideboxes() {
+          console.log("hide");
+          for (let i = 0; i < allmenus.length; i++) {
+            allmenus[i].classList.add("hide");
+          }
+          window.location.href = 'https://www.bananmaelk.dk/kea/dbcm/04/shop/';
+        }
+        
+      function forcePageRefreshOnBack() {
+        window.addEventListener('pageshow', (event) => {
+          // Check if the page is loading from the cache
+          if (event.persisted) {
+            // Force a page refresh to ensure up-to-date content
+            location.reload();
+          }
+        });
+      }
+      
+      // Call the function to enable the refresh on back functionality
+      forcePageRefreshOnBack();
+      
+      </script>
+   <!-- /wp:html -->
